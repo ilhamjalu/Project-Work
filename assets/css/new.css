@@ -1,0 +1,53 @@
+#foto{
+			height: 14cm;
+			width: 20cm;
+			clear: right;
+		}
+
+		#gambar{
+			
+			position: center;
+			padding: 1cm;
+			width: 19cm;
+			height: 14cm;
+		}
+
+		#kaka{
+			padding: 1cm;
+			clear: left;
+			border: 1;
+			border-style: solid;
+			height: 12cm;
+		}
+
+		#embo{
+			padding: 1cm;
+		}
+
+		h1{
+			text-align: center;
+			padding-bottom: 0.7cm; 
+		}
+
+		.col-lg-7{
+			margin-bottom: 10px;
+		}
+
+		.button{
+			margin-top: 0.7cm;
+		}
+
+		.col-lg-3{
+			padding: 10px;
+		}
+		body{
+			overflow-x:hidden; 
+		}
+
+		#penjual{
+			border: 1;
+			border-style: solid;
+			margin: 1cm;
+			padding:1cm;
+			margin-top: 3cm;
+		}
