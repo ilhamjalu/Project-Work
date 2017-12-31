@@ -32,32 +32,56 @@
 		<div class="col-lg-3">
 			<div>
 				<img src="<?php echo base_url();?>assets/images/food1.jpg">
+				<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-lg-3">
 			<div>
 				<img src="<?php echo base_url();?>assets/images/food1.jpg">
+				<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 		<div class="col-lg-3">
 			<img src="<?php echo base_url();?>assets/images/food1.jpg">
+			<div class="overlay">
+    				<div class="newtext">Hello World</div>
+  				</div>
 		</div>
 	</div>
 </div>
@@ -113,11 +137,11 @@
 						</div>
 				</div>
 				<div class="form-group">	
-					<div class="col-lg-6 button">
-						<button class="col-lg-6 btn btn-primary btn-md btn-block" type="button" id="tombol"><b>Pesan</b></button>
+					<div class="col-lg-6">
+						<button class="col-lg-6 btn btn-primary btn-md btn-block button" type="button" id="tombol"><b>Pesan</b></button>
 					</div>
-					<div class="col-lg-6 button">
-						<button class="col-lg-6 btn btn-primary btn-md btn-block" type="button" id="tombol"><b>Kembali</b></button>
+					<div class="col-lg-6">
+						<button class="col-lg-6 btn btn-primary btn-md btn-block button" type="button" id="tombol"><b>Kembali</b></button>
 					</div>
 				</div>
 			</div>

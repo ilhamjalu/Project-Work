@@ -15,6 +15,8 @@
 		<link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<!-- font-->
 		<link href="<?php echo base_url();?>assets/css/font-awesome.css" rel="stylesheet">
+			<link rel="stylesheet" href="<?php echo base_url();?>assets/css/new.css">
+
 	</head>
 
 
