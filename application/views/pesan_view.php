@@ -3,6 +3,9 @@
 <head>
 	<title>Pesan</title>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/new.css">
+	<style type="text/css">
+		overflow-x:hidden; 
+	</style>
 </head>
 <body>
 <div id="home" class="w3ls-banner"> 

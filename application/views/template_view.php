@@ -41,7 +41,7 @@
 							<li><a class="page-scroll scroll" href="#pertama">Menu</a></li>
 							<li><a class="page-scroll scroll" href="#kedua">Pesan</a></li>
 							<li><a class="page-scroll scroll" href="#about">Pengembang</a></li>
-							<li><a class="page-scroll scroll" href="<?php echo base_url()?>index.php/login">Login</a></li>
+							<li><a class="page-scroll scroll" href="<?php echo base_url()?>index.php/login">Logout</a></li>
 						</ul>
 					</div>
 				</div>
