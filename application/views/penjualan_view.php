@@ -52,5 +52,35 @@
 		</div>
 	</div>
 	</div>
+	<div class="row">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+					  	<div class="panel panel-info">
+							<div class="panel-heading">Data Penjual</div>
+					    	<div class="panel-body">
+								<table border="0" cellpadding="4" cellspacing="0" class="datatable table table-striped table-bordered">
+									<tr>
+										<th>Gambar</th>
+										<th>Nama Makanan</th>
+										<th>Harga</th>
+										<th>Aksi</th>
+									</tr>
+									<tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td> 
+                                              <a href="" class="btn btn-info btn-sm"><i class="glyphicon glyphicon-search"></i>Lihat</a>
+                                              <a href="" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i>Hapus</a>
+                                            </td>
+                                        </tr>
+								</table>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
