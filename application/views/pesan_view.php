@@ -6,6 +6,13 @@
 	<style type="text/css">
 		overflow-x:hidden; 
 	</style>
+
+	<!-- <script type="text/javascript">
+		function like() {
+			var a = document.getElementById("tambah");
+			a.innerHTML+="<div class="col-lg-7"> <input type="text" name="makanan" id="makanan" class="form-control input_with_text" placeholder="Masukkan Nama Makanan"> </div>";
+		}
+	</script> -->
 </head>
 <body>
 <div id="home" class="w3ls-banner"> 
@@ -104,25 +111,34 @@
 				<div class="row">
 				<div class="form-body">
 				<div class="form-group">
-					<label for="nama" class="control-label col-lg-5">Nama Pemesan</label>
+					<label for="nama" class="control-label col-lg-4">Nama Pemesan</label>
 					<div class="col-lg-7">
 						<input type="text" name="nama" id="nama" class="form-control input_with_text" placeholder="Masukkan Nama Pemesan">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="makanan" class="control-label col-lg-5">Nama Makanan</label>
+					<label for="makanan" class="control-label col-lg-4">Nama Makanan</label>
 					<div class="col-lg-7">
 						<input type="text" name="makanan" id="makanan" class="form-control input_with_text" placeholder="Masukkan Nama Makanan">
 					</div>
+					<div class="col-lg-1">
+						<span class="fa fa-plus-square" aria-hidden="true" onclick="like()"></span>
+					</div>
 				</div>
+
+				<!-- <div class="form-group" id="tambah">
+					
+					
+				</div> -->
+
 				<div class="form-group">
-					<label for="kelas" class="control-label col-lg-5">Kelas</label>
+					<label for="kelas" class="control-label col-lg-4">Kelas</label>
 					<div class="col-lg-7">
 						<input type="text" name="kelas" id="kelas" class="form-control input_with_text" placeholder="Masukkan Kelas">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="kantin" class="control-label col-lg-5"> Kantin </label>
+					<label for="kantin" class="control-label col-lg-4"> Kantin </label>
 					<div class="col-lg-7">
 						<select id="kantin" class="form-control">
 							<option value=""> Pilih Kantin </option>
@@ -134,7 +150,7 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-lg-5"> Jumlah </label>
+					<label class="control-label col-lg-4"> Jumlah </label>
 						<div class="col-lg-7">
 							<input type="number" class="form-control">
 						</div>

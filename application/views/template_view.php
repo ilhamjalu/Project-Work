@@ -38,10 +38,10 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li class="hidden"><a class="page-scroll scroll" href="#page-top"></a>	</li>
 							<li><a class="page-scroll scroll" href="#home">Home</a></li>
-							<li><a class="page-scroll scroll" href="#pertama">Menu</a></li>
+							<li><a class="page-scroll scroll" href="#pertama">Kantin</a></li>
 							<li><a class="page-scroll scroll" href="#kedua">Pesan</a></li>
 							<li><a class="page-scroll scroll" href="#about">Pengembang</a></li>
-							<li><a class="page-scroll scroll" href="<?php echo base_url()?>index.php/login">Logout</a></li>
+							<li><a class="page-scroll scroll" href="<?php echo base_url()?>index.php/login/logout">Logout</a></li>
 						</ul>
 					</div>
 				</div>
