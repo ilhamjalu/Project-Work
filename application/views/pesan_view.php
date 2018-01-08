@@ -132,9 +132,9 @@
 				</div> -->
 
 				<div class="form-group">
-					<label for="kelas" class="control-label col-lg-4">Kelas</label>
+					<label for="kelas" class="control-label col-lg-4">Date</label>
 					<div class="col-lg-7">
-						<input type="text" name="kelas" id="kelas" class="form-control input_with_text" placeholder="Masukkan Kelas">
+						<input type="date" name="date" id="date" class="form-control input_with_text" placeholder="Masukkan Kelas">
 					</div>
 				</div>
 				<div class="form-group">
