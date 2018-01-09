@@ -5,10 +5,52 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/new.css">
 	<style type="text/css">
 		overflow-x:hidden; 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
 	</style>
+
+	<!-- <script type="text/javascript">
+		function like() {
+			var a = document.getElementById("tambah");
+			a.innerHTML+="<div class="col-lg-7"> <input type="text" name="makanan" id="makanan" class="form-control input_with_text" placeholder="Masukkan Nama Makanan"> </div>";
+		}
+	</script> -->
 </head>
 <body>
-<div id="home" class="w3ls-banner"> 
+<div id="home" class="w3ls-banner" > 
 			<div class="slider">
 				<div class="callbacks_container">
 					<ul class="rslides callbacks callbacks1" id="slider4">
@@ -30,7 +72,7 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-<div class="row" id="pertama">
+<div class="row" id="pertama" style="margin-left: 10px; margin-right: 10px;">
 	<div class="row">
 		<div class="col-lg-3">
 			<div>
@@ -104,25 +146,34 @@
 				<div class="row">
 				<div class="form-body">
 				<div class="form-group">
-					<label for="nama" class="control-label col-lg-5">Nama Pemesan</label>
+					<label for="nama" class="control-label col-lg-4">Nama Pemesan</label>
 					<div class="col-lg-7">
 						<input type="text" name="nama" id="nama" class="form-control input_with_text" placeholder="Masukkan Nama Pemesan">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="makanan" class="control-label col-lg-5">Nama Makanan</label>
+					<label for="makanan" class="control-label col-lg-4">Nama Makanan</label>
 					<div class="col-lg-7">
 						<input type="text" name="makanan" id="makanan" class="form-control input_with_text" placeholder="Masukkan Nama Makanan">
 					</div>
+					<div class="col-lg-1">
+						<span class="fa fa-plus-square" aria-hidden="true" onclick="like()"></span>
+					</div>
 				</div>
+
+				<!-- <div class="form-group" id="tambah">
+					
+					
+				</div> -->
+
 				<div class="form-group">
-					<label for="kelas" class="control-label col-lg-5">Kelas</label>
+					<label for="kelas" class="control-label col-lg-4">Date</label>
 					<div class="col-lg-7">
-						<input type="text" name="kelas" id="kelas" class="form-control input_with_text" placeholder="Masukkan Kelas">
+						<input type="date" name="date" id="date" class="form-control input_with_text" placeholder="Masukkan Kelas">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="kantin" class="control-label col-lg-5"> Kantin </label>
+					<label for="kantin" class="control-label col-lg-4"> Kantin </label>
 					<div class="col-lg-7">
 						<select id="kantin" class="form-control">
 							<option value=""> Pilih Kantin </option>
@@ -134,7 +185,7 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-lg-5"> Jumlah </label>
+					<label class="control-label col-lg-4"> Jumlah </label>
 						<div class="col-lg-7">
 							<input type="number" class="form-control">
 						</div>
@@ -151,6 +202,61 @@
 			</div>
 			</div>
 		</div>	
+	</div>
+</div>
+</div>
+<div id="profil">
+	<div class="row">
+		<div class="form-body" style="margin-left: 10px; margin-right:10px;">
+			<div class="form-group">
+				<div class="card col-lg-4">
+						<div class="card" style="background-color:#d5e2de">
+ 						 <img src="<?php echo base_url();?>assets/images/jalu.jpg" alt="John" style="width:100%">
+						  <h1>Orang ganteng</h1>
+  							<p class="title" style="text-align:center">ganteng banget </p>
+  							<p style="text-align:center">Harvard University</p>
+ 							 <div style="margin: 24px 0;" align="center">
+  							  	<a href="#"><i class="fa fa-instagram"></i></a> 
+ 							    <a href="#"><i class="fa fa-facebook"></i></a>    
+ 								<a href="#"><i class="fa fa-github"></i></a> 
+							 </div>
+						<p><button>Contact</button></p>
+							</div>
+						</div>
+			</div>
+			<div class="form-group">
+				<div class="card col-lg-4">
+						<div class="card" style="background-color:#d5e2de">
+ 						 <img src="<?php echo base_url();?>assets/images/jalu.jpg" alt="John" style="width:100%">
+						  <h1>Orang ganteng</h1>
+  							<p class="title" style="text-align:center">ganteng banget </p>
+  							<p style="text-align:center">Harvard University</p>
+ 							 <div style="margin: 24px 0;" align="center">
+  							  	<a href="#"><i class="fa fa-instagram"></i></a> 
+ 							    <a href="#"><i class="fa fa-facebook"></i></a>    
+ 								<a href="#"><i class="fa fa-github"></i></a> 
+							 </div>
+						<p><button>Contact</button></p>
+							</div>
+						</div>
+			</div>
+			<div class="form-group">
+				<div class="card col-lg-4">
+						<div class="card" style="background-color:#d5e2de">
+ 						 <img src="<?php echo base_url();?>assets/images/jalu.jpg" alt="John" style="width:100%">
+						  <h1>Orang ganteng</h1>
+  							<p class="title" style="text-align:center">ganteng banget </p>
+  							<p style="text-align:center">Harvard University</p>
+ 							 <div style="margin: 24px 0;" align="center">
+  							  	<a href="#"><i class="fa fa-instagram"></i></a> 
+ 							    <a href="#"><i class="fa fa-facebook"></i></a>    
+ 								<a href="#"><i class="fa fa-github"></i></a> 
+							</div>
+								<p><button>Contact</button></p>
+							</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>

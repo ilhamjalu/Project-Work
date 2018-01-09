@@ -6,7 +6,7 @@ class penjualan extends CI_Controller {
 	public function index()
 	{
 		$data['main_view'] = 'penjualan_view';
-		$this->load->view('template_view', $data);
+		$this->load->view('template_view1', $data);
 	}
 
 }

@@ -18,12 +18,18 @@
 		<div class="col-md-4"></div>
 
 		<div class="col-md-4">
+			<?php if (!empty($announce)) {
+				echo '<div class="alert alert-danger">';
+				echo $announce;
+				echo '</div>';
+			}
+			?>
 			<section class="login-form">
-				<form method="post" action="<?php echo base_url();?>index.php/awal/do_login" role="login">
-					<input type="email" name="email" placeholder="example@gmail.com" required class="form-control input-lg"/>
-					<input type="password" class="form-control input-lg" id="password" placeholder="Password" required="">
+				<form method="post" action="<?php echo base_url();?>index.php/login/login" role="login">
+					<input type="text" name="username" placeholder="Username" required class="form-control input-lg"/>
+					<input type="password" name="password" class="form-control input-lg" id="password" placeholder="Password" required="">
 					<div class="pwstrength_viewport_progress"></div>
-					<button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign In</button>
+					<input type="submit" name="submit" value="Sign In" class="btn btn-lg btn-primary btn-block">
 					<div>
 						<a href="#">Create account</a> or <a href="#">reset password</a>
 					</div>

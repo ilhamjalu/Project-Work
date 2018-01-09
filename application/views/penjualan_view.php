@@ -4,7 +4,7 @@
 	<title></title>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/css/new.css">
 </head>
-<body>
+<body style="overflow: hidden;">
 	<div class="container" style="margin-bottom: 1.1cm">
 	<div id="penjual" style="margin-top:3.5cm">
 		<h1>
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 	</div>
-	<div class="row">
+	<div class="row" id="datapenjual">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
@@ -79,6 +79,84 @@
 							</div>
 						</div>
 					</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:1cm" id="report">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-body">
+					<div class="form-group">
+						<div class="col-lg-12 page-content">
+                    <div id="flash-message-wrapper" style="display: none;"></div>
+                    <div class="panel panel-default custom-panel">
+    <div class="panel-heading">
+        <h3 class="panel-title">Report</h3>
+        <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <div class="huge">0</div>
+                                <div>Orders Today</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <div class="huge">$ 0.00</div>
+                                <div>Sales Today</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <div class="huge">122</div>
+                                <div>Orders Total</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-lg-12 text-right">
+                                <div class="huge">$ 13.883.63</div>
+                                <div>Sales Total</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                </div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
