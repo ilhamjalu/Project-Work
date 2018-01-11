@@ -14,17 +14,64 @@ class Pesan_model extends CI_Model
         parent::__construct();
     }
 
-    public function insert()
+   public function tambah_transaksi()
     {
-    	$username = $this->session->userdata('username');
-    	$userID = $this->db->where('USERNAME', $username)->get('user')->row()->ID;
+        $username = $this->session->userdata('username');
+        $userid = $this->db->where('USERNAME', $username)->get('user')->row()->ID;
 
-    	$makanan = $this->session->userdata('nakam');
-    	$mangan = $this->db->where('NAMA_MENU', $nakam)->get('makan')->row();
+        $datatran=array(
+            'ID_TRAN' => NULL,
+            'ID' => $userid,
+            'TANGGAL' => date('Y-m-d')
+        );
 
-    	$nama = $this->input->post('');
-    	$makan = $this->input->post('');
-    	$date = $this->input->post('');
-    	$jumlah = $this->input->post('');
+        $ndektrans = $this->db->insert('transaksi', $datatran);
+
+        if ($this->db->affected_rows()>0) {
+            return TRUE;
+        }else{
+            return FALSE;
+        }
+    }
+
+    public function tambah_det()
+    {
+        $tran = $this->db->get('transaksi')->row()->ID_TRAN;
+        $jumlah = $this->input->post('meow');
+
+        $ket = $this->input->post('maem');
+        $menu = $this->db->where('NAMA_MENU', $ket)->get('menu')->row()->ID_MENU;
+        $harga = $this->db->get('menu')->row()->HARGA;
+
+        $tt = $harga * $jumlah;
+
+        $datadet = array(
+            'ID_DETIL' => NULL,
+            'ID_MENU' => $menu,
+            'ID_TRANS' => $trans,
+            'JUMLAH' => $jumlah,
+            'TOTAL' => $tt
+        );
+
+        $ndekdet = $this->db->insert('detil_tran', $datadet);
+        if ($this->db->affected_rows()>0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    public function get_dropdownkantin()
+    {
+        return $this->db->select('ID_KANTIN', 'NAMA_KANTIN')
+                        ->get('kantin')
+                        ->result();
+    }
+
+    public function getmakanan()
+    {
+        return $this->db->select('ID_MENU', 'NAMA_MENU')
+                        ->get('menu')
+                        ->result();
     }
 }

@@ -79,6 +79,8 @@ button:hover, a:hover {
 				<img src="<?php echo base_url();?>assets/images/food1.jpg">
 				<div class="overlay">
     				<div class="newtext">Hello World</div>
+    				<br>
+    				<div class="newtext">adad</div>
   				</div>
 			</div>
 		</div>
@@ -144,61 +146,48 @@ button:hover, a:hover {
 				PEMESANAN
 			</h1>
 				<div class="row">
-				<div class="form-body">
-				<div class="form-group">
-					<label for="nama" class="control-label col-lg-4">Nama Pemesan</label>
-					<div class="col-lg-7">
-						<input type="text" name="nama" id="nama" class="form-control input_with_text" placeholder="Masukkan Nama Pemesan">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="makanan" class="control-label col-lg-4">Nama Makanan</label>
-					<div class="col-lg-7">
-						<input type="text" name="makanan" id="makanan" class="form-control input_with_text" placeholder="Masukkan Nama Makanan">
-					</div>
-					<div class="col-lg-1">
-						<span class="fa fa-plus-square" aria-hidden="true" onclick="like()"></span>
-					</div>
-				</div>
-
-				<!-- <div class="form-group" id="tambah">
-					
-					
-				</div> -->
-
-				<div class="form-group">
-					<label for="kelas" class="control-label col-lg-4">Date</label>
-					<div class="col-lg-7">
-						<input type="date" name="date" id="date" class="form-control input_with_text" placeholder="Masukkan Kelas">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="kantin" class="control-label col-lg-4"> Kantin </label>
-					<div class="col-lg-7">
-						<select id="kantin" class="form-control">
-							<option value=""> Pilih Kantin </option>
-							<option value=""> ilham </option>
-							<option value=""> Jalu </option>
-							<option value=""> Prakosa </option>
-							<option value=""> Ganteng </option>
-						</select>
-					</div>
-				</div>
-				<div class="form-group">
+					<form action="<?php echo base_url();?>index.php/pesan/tambah" method="post" enctype="multipart/form-data">
+						<div class="form-body">
+							<div class="form-group">
+								<label for="kantin" class="control-label col-lg-4"> Nama Makanan </label>
+									<div class="col-lg-7">
+										<select id="maem" name="maem" class="form-control">
+												<?php
+													foreach ($menu as $o) {
+														echo '<option value="'.$o->ID_MENU.'">'.$o->NAMA_MENU.'</option>';
+													}
+												?>
+										</select>
+									</div>
+							</div>
+							<div class="form-group">
+								<label for="kantin" class="control-label col-lg-4"> Kantin </label>
+									<div class="col-lg-7">
+										<select id="kantin" name="kantin" class="form-control">
+												<?php
+													foreach ($kantin as $o) {
+														echo '<option value="'.$o->ID_KANTIN.'">'.$o->NAMA_KANTIN.'</option>';
+													}
+												?>
+										</select>
+									</div>
+							</div>
+							<div class="form-group">
 					<label class="control-label col-lg-4"> Jumlah </label>
 						<div class="col-lg-7">
-							<input type="number" class="form-control">
+							<input type="number" name="meow" class="form-control">
 						</div>
-				</div>
-				<div class="form-group">	
+							</div>
+							<div class="form-group">	
 					<div class="col-lg-6">
-						<button class="col-lg-6 btn btn-primary btn-md btn-block button" type="button" id="tombol"><b>Pesan</b></button>
+						<input type="submit" name="submit" value="Tambah" class="col-lg-6 btn btn-primary btn-md btn-block button">
 					</div>
 					<div class="col-lg-6">
-						<button class="col-lg-6 btn btn-primary btn-md btn-block button" type="button" id="tombol"><b>Kembali</b></button>
+						<input type="reset" name="submit" value="Reset" class="col-lg-6 btn btn-primary btn-md btn-block button">
 					</div>
-				</div>
-			</div>
+							</div>
+						</div>
+					</form>
 			</div>
 			</div>
 		</div>	
