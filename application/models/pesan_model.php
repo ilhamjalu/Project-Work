@@ -14,7 +14,39 @@ class Pesan_model extends CI_Model
         parent::__construct();
     }
 
-   public function tambah_transaksi()
+    public function insert()
+    {
+        $username = $this->session->userdata('username');
+        $userid = $this->db->where('USERNAME', $username)->get('user')->row()->ID;
+
+
+    }
+
+    public function getDropdownMenu()
+    {
+        return $this->db->select('ID_MENU', 'NAMA_MENU')
+                        ->get('menu')
+                        ->result();
+    }
+
+    public function deletePesan($id)
+    {
+        $this->db->where('ID_TRAN', $id)->delete('transaksi');
+        if ($this->db->affected_rows()>0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    public function history()
+    {
+        
+    }
+
+
+
+  /* public function tambah_transaksi()
     {
         $username = $this->session->userdata('username');
         $userid = $this->db->where('USERNAME', $username)->get('user')->row()->ID;
@@ -73,5 +105,5 @@ class Pesan_model extends CI_Model
         return $this->db->select('ID_MENU', 'NAMA_MENU')
                         ->get('menu')
                         ->result();
-    }
+    }*/
 }

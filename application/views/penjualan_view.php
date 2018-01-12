@@ -6,7 +6,7 @@
 </head>
 <body style="overflow: hidden;">
 	<div class="container" style="margin-bottom: 1.1cm">
-	<div id="penjual" style="margin-top:3.5cm">
+	<!-- <div id="penjual" style="margin-top:3.5cm">
 
 		<?php if (!empty($notif)) {
 				echo '<div class="alert alert-danger">';
@@ -23,12 +23,6 @@
 			<div class="col-lg-12">
 				<form action="<?php echo base_url();?>index.php/penjualan/input" method="post" enctype="multipart/form-data">
 					<div class="form-body">
-						<div class="form-group">
-							<label for="kantin" class="control-label col-lg-5">Nama Kantin</label>
-								<div class="col-lg-7 ">
-									<input type="text" name="kantin" id="kantin" class="form-control input_with_text" placeholder="Masukkan Nama kantin">
-								</div>
-						</div>	
 						<div class="form-group">
 							<label for="gambar" class="control-label col-lg-5">Gambar</label>
 								<div class="col-lg-7">
@@ -59,16 +53,17 @@
 				</form>
 			</div>
 		</div>
+	</div> -->
 	</div>
-	</div>
-	<div class="row" id="datapenjual">
+	<div class="row" id="datapenjual" style="margin-top:2cm">
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 					  	<div class="panel panel-info">
 							<div class="panel-heading">Data Penjual</div>
 					    	<div class="panel-body">
-								<table border="0" cellpadding="4" cellspacing="0" class="datatable table table-striped table-bordered">
+					    		<button class="btn btn-success btn-sm"><i class="fa fa-plus" aria-hidden="true"></i></button>
+								<table border="0" cellpadding="4" cellspacing="0" class="datatable table table-striped table-bordered" style="margin-top: 10px">
 									<tr>
 										<th>Gambar</th>
 										<th>Nama Makanan</th>

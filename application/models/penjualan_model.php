@@ -12,7 +12,44 @@ class Penjualan_model extends CI_Model{    /**
         parent::__construct();
     }
 
-    public function insert($kantin)
+
+    public function insert_menu()
+    {
+        $username = $this->session->userdata('username');
+        $userid = $this->db->where('USERNAME', $username)->get('user')->row()->ID;
+
+        $datamenu = array (
+            'ID_MENU' => NULL,
+            'ID_USER' => $userid,
+            'NAMA_MENU' => $this->input->post(''),
+            'GAMBAR' => $file['file_name'],
+            'HARGA' => $this->input->post('')
+        );
+
+        $mlebu = $this->db->insert('menu', $datamenu);
+
+        if ($this->db->affected_rows()>0) {
+            return TRUE;
+        } else {
+            return FALSE;
+        }
+    }
+
+    public function select_menu()
+    {
+        
+    }
+
+    public function update_menu()
+    {
+        
+    }
+
+    public function delete_menu()
+    {
+        
+    }
+    /*public function insert($kantin)
     {
     	$this->db->insert('kantin', $kantin);
     	return $this->db->insert_id();
@@ -66,5 +103,5 @@ class Penjualan_model extends CI_Model{    /**
     	} else {
     		return FALSE;
     	}
-    }
+    }*/
 }

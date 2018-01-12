@@ -79,7 +79,6 @@ button:hover, a:hover {
 				<img src="<?php echo base_url();?>assets/images/food1.jpg">
 				<div class="overlay">
     				<div class="newtext">Hello World</div>
-    				<br>
     				<div class="newtext">adad</div>
   				</div>
 			</div>

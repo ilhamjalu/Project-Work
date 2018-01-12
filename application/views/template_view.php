@@ -6,6 +6,8 @@
 		<title>Moklet Canteen</title>
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+		
 		
 		<!---CSS-->
 		<link href="<?php echo base_url();?>assets/css/lightbox.css" rel="stylesheet">
